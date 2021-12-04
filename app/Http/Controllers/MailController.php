@@ -17,7 +17,6 @@ class MailController extends Controller
             'g-recaptcha-response' => 'required|recaptchav3:/,0.5'
         ]);
 
-        dd('sukses');
         $validatedInput['subject_email'] = 'Contact Form Notification';
         $validatedInput['view'] = 'contact-us';
 
