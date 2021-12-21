@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PageFactory extends Factory
+class TeamFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,9 +14,11 @@ class PageFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->sentence(2),
-            'slug' => $this->faker->slug(3),
-            'status' => 1,
+            'name' => $this->faker->name(),
+            'position' => $this->faker->jobTitle(),
+            'linkedin' => 'http://linkedin.com/',
+            'whatsapp' => '898788987',
+            'instagram' => ''
         ];
     }
 }

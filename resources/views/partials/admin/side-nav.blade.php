@@ -22,8 +22,14 @@
             <li class="nav-item {{ Request::is('services') ? 'active' : '' }}">
                 <a href="/services"><i class="fas fa-concierge-bell"></i><span>Service</span></a>
             </li>
+            <li class="nav-item {{ Request::is('teams') ? 'active' : '' }}">
+                <a href="/teams"><i class="fas fa-user-friends"></i><span>Teams</span></a>
+            </li>
             <li class="nav-item {{ Request::is('posts') ? 'active' : '' }}">
                 <a href="/posts"><i class="fas fa-newspaper"></i><span>Posts</span></a>
+            </li>
+            <li class="nav-item {{ Request::is('categories') ? 'active' : '' }}">
+                <a href="/categories"><i class="fas fa-tags"></i><span>Categories</span></a>
             </li>
             {{-- <li class="nav-item {{ Request::is('comments') ? 'active' : '' }}">
                 <a href="/comments"><i class="fas fa-comments"></i><span>Comments</span></a>
@@ -39,9 +45,6 @@
             </li>
             <li class="nav-item {{ Request::is('profile') ? 'active' : '' }}">
                 <a href="/profile"><i class="fas fa-user"></i><span>Profile</span></a>
-            </li>
-            <li class="nav-item {{ Request::is('change-password') ? 'active' : '' }}">
-                <a href="/change-password"><i class="fas fa-lock"></i><span>Change Password</span></a>
             </li>
             <li class="nav-item {{ Request::is('logout') ? 'active' : '' }}">
                 <a href="/logout"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>

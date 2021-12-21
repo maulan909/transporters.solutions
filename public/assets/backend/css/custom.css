@@ -32,9 +32,20 @@ button:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
     margin-left: 4px;
 }
 
-#accordionLandingPage .card .card-header button.btn-link {
+.colorinput-color:before {
+    border-radius: 50%;
+    border: 2px solid #6777ef;
+}
+
+#accordionLandingPage .card .card-header button.btn-link,
+#accordionOurTeam .card .card-header button.btn-link {
     background-color: #6777ef;
 }
-#accordionLandingPage .card .card-header button.btn-link:hover {
+#accordionLandingPage .card .card-header button.btn-link:hover,
+#accordionOurTeam .card .card-header button.btn-link:hover {
     background-color: #6777ef;
+}
+#cropperImage {
+    display: block;
+    width: 80%;
 }

@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="row">
-    <div class="col">
+    <div class="col-lg-6">
         <div class="card">
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-8 mb-2 mb-lg-0">
-                        <a href="{{ route('posts.create') }}" class="btn btn-primary">Add New</a>
+                        <a href="{{ route('pages.create') }}" class="btn btn-primary">Add New</a>
                     </div>
                     <div class="col-lg-4">
                         <div class="input-group mb-3">
@@ -26,22 +26,18 @@
                                 <thead>
                                     <tr>
                                         <td width="50">#</td>
-                                        <td>Title</td>
-                                        <td width="500">URL Slug</td>
-                                        <td width="150">Status</td>
-                                        <td width="200">Action</td>
+                                        <td>Category</td>
+                                        <td width="250">Action</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Cara Membuat Sesuatu</td>
-                                        <td>https://transporters.solutions/bla bla bla</td>
-                                        <td>Active</td>
+                                        <td>Technology</td>
                                         <td class="d-flex align-items-center justify-content-end">
-                                            <a href="/posts/slug" class="my-2 mx-1 btn btn-info">Lihat</a>
-                                            <a href="/posts/slug" class="my-2 mx-1 btn btn-warning">Edit</a>
-                                            <form action="/posts" method="post" class="d-inline-block">
+                                            <a href="/pages/slug" class="my-2 mx-1 btn btn-info">Lihat</a>
+                                            <a href="/pages/slug" class="my-2 mx-1 btn btn-warning">Edit</a>
+                                            <form action="/pages" method="post" class="d-inline-block">
                                                 @csrf
                                                 @method('DELETE')
 
@@ -54,9 +50,7 @@
                                 <tfoot>
                                     <tr>
                                         <td>#</td>
-                                        <td>Title</td>
-                                        <td>URL Slug</td>
-                                        <td>Status</td>
+                                        <td>Category</td>
                                         <td>Action</td>
                                     </tr>
                                 </tfoot>

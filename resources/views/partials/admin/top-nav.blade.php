@@ -13,11 +13,8 @@
                 <div class="d-sm-none d-lg-inline-block">{{ Auth::user()->name; }}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-                <a href="features-profile.html" class="dropdown-item has-icon">
+                <a href="/profile" class="dropdown-item has-icon">
                     <i class="far fa-user"></i> Profile
-                </a>
-                <a href="features-settings.html" class="dropdown-item has-icon">
-                    <i class="fas fa-lock"></i> Change Password
                 </a>
                 <div class="dropdown-divider"></div>
                 <form action="{{ route('logout') }}" method="post">

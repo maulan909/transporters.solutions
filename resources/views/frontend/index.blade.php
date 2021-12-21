@@ -55,7 +55,7 @@
         </div>
     </nav>
     <section id="hero" class="d-flex align-items-center" data-aos="fade-down"
-        style="background-image: url('assets/img/hero-image.jpg');">
+        style="background-image: url('{{ asset('storage/' . $data->hero_image) }}');">
         <div class="container mb-5">
             <div class="row mb-5">
                 <div class="col-lg-8">
@@ -84,7 +84,7 @@
     </section>
     <section id="tentang-kami">
         <div class="bg-image-about" data-aos="fade-left" data-aos-offset="400"
-            style="background-image: url('assets/img/about-image.jpg');">
+            style="background-image: url('{{ asset('storage/' . $data->about_image) }}');">
             <div class="triangle-about">
             </div>
         </div>
@@ -103,8 +103,8 @@
             </div>
         </div>
     </section>
-    <section id="layanan" style="background-image: url('assets/img/service-image.jpg');" data-aos="fade-right"
-        data-aos-offset="200">
+    <section id="layanan" style="background-image: url('{{ asset('storage/' . $data->service_image) }}');"
+        data-aos="fade-right" data-aos-offset="200">
         <div class="obj-triangle">
             <div class="triangle-layanan top-0">
             </div>

@@ -14,7 +14,11 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->sentence(rand(3, 8)),
+            'category_id' => rand(1, 2),
+            'author_id' => 1,
+            'slug' => $this->faker->unique()->slug(rand(3, 8)),
+            'body' => '<implode>' . implode('</p><p>', $this->faker->paragraphs(rand(2, 4))) . '</implode>'
         ];
     }
 }

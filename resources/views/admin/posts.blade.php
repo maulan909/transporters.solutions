@@ -22,7 +22,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="table-responsive">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <td width="50">#</td>
@@ -30,6 +30,7 @@
                                         <td width="200">Category</td>
                                         <td width="200">Author</td>
                                         <td width="200">Publish Date</td>
+                                        <td width="150">Status</td>
                                         <td width="100">Views</td>
                                         <td width="200">Action</td>
                                     </tr>
@@ -39,8 +40,9 @@
                                         <td>1</td>
                                         <td>Cara Membuat Sesuatu</td>
                                         <td>Technology</td>
-                                        <td></td>
+                                        <td>Hilmi Maulana</td>
                                         <td>{{ date('Y-m-d H:i:s') }}</td>
+                                        <td><span class="badge badge-pill badge-info">Scheduled</span></td>
                                         <td>1</td>
                                         <td class="d-flex align-items-center justify-content-end">
                                             <a href="/pages/slug" class="my-2 mx-1 btn btn-info">Lihat</a>
@@ -62,6 +64,7 @@
                                         <td>Category</td>
                                         <td>Author</td>
                                         <td>Publish Date</td>
+                                        <td>Status</td>
                                         <td>Views</td>
                                         <td>Action</td>
                                     </tr>
